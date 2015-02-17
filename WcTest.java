@@ -64,4 +64,10 @@ public class WcTest{
 		assertEquals(7, WcLib.numberOfSpaces(string));
 	}
 
+	@Test
+	public void numberOfSpaces_gives_0_when_no_spaces_are_in_string(){
+		String string="Iamrukna";
+		assertEquals(0, WcLib.numberOfSpaces(string));
+	}
+
 }
