@@ -1,5 +1,6 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
+
 public class WcTest{
 
 	@Test
@@ -13,6 +14,12 @@ public class WcTest{
 	public void getByteLength_gives_24_when_string_lenght_is_24(){
 		String string="I am swamiji STEP father";
 		assertEquals(24, WcLib.getByteLength(string));
+	}
+
+	@Test
+	public void getByteLength_gives_46_when_string_lenght_is_46(){
+		String string="Jayanth is STEP mother and Swamiji STEP father";
+		assertEquals(46, WcLib.getByteLength(string));
 	}
 
 }
