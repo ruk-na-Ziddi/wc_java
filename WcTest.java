@@ -28,6 +28,10 @@ public class WcTest{
 		assertEquals(3, WcLib.getNumberOfWords(string));
 	}
 
-	
+	@Test
+	public void getNumberOfWords_gives_3_when_3_words_are_in_string_string_having_outer_spaces(){
+		String string="        I am rukna       ";
+		assertEquals(3, WcLib.getNumberOfWords(string));
+	}
 
 }
