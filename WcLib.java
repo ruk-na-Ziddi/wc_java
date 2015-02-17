@@ -6,10 +6,14 @@ public class WcLib{
 		return string.length();
 	}
 
+	public static int numberOfSpaces(String string){
+		return string.length()-string.replace(" ","").length();
+	}
+
 	public static int getNumberOfWords(String string){
 		String trimmed=string.trim();
 		trimmed=trimmed.replaceAll("\\s+"," ");
-		int spaces = trimmed.length()-trimmed.replace(" ","").length();
-		return spaces+1;
+		return numberOfSpaces(trimmed)+1;
 	}
+
 }

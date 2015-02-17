@@ -46,4 +46,10 @@ public class WcTest{
 		assertEquals(3, WcLib.getNumberOfWords(string));
 	}
 
+	@Test
+	public void numberOfSpaces_gives_2_when_2_spaces_are_in_string(){
+		String string="I am rukna";
+		assertEquals(2, WcLib.numberOfSpaces(string));
+	}
+
 }
