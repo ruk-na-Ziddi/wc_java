@@ -8,4 +8,11 @@ public class WcTest{
 		assertEquals(10, WcLib.getByteLength(string));
 	}
 
+
+	@Test
+	public void getByteLength_gives_24_when_string_lenght_is_24(){
+		String string="I am swamiji STEP father";
+		assertEquals(24, WcLib.getByteLength(string));
+	}
+
 }
