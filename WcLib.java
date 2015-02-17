@@ -1,5 +1,3 @@
-import java.io.*;
-
 public class WcLib{
 
 	public static int getByteLength(String string){
