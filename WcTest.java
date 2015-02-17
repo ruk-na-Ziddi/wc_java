@@ -52,4 +52,16 @@ public class WcTest{
 		assertEquals(2, WcLib.numberOfSpaces(string));
 	}
 
+	@Test
+	public void numberOfSpaces_gives_5_when_5_spaces_are_in_string(){
+		String string="I   am  rukna";
+		assertEquals(5, WcLib.numberOfSpaces(string));
+	}
+
+	@Test
+	public void numberOfSpaces_gives_7_when_7_spaces_are_in_string(){
+		String string=" I   am  rukna ";
+		assertEquals(7, WcLib.numberOfSpaces(string));
+	}
+
 }
