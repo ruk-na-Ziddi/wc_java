@@ -15,8 +15,7 @@ public class WcLib{
 	}
 
 	public int countWords(){
-		String trimmed=text.trim();
-		return trimmed.split("\\W+").length;
+		return text.trim().split("\\W+").length;
 	}
 
 	public int countLines(){
