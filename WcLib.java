@@ -10,8 +10,7 @@ public class WcLib{
 
 	public static int getNumberOfWords(String string){
 		String trimmed=string.trim();
-		trimmed=trimmed.replaceAll("\\s+"," ");
-		return numberOfSpaces(trimmed)+1;
+		return trimmed.split("\\W+").length;
 	}
 
 }

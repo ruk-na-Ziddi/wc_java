@@ -47,6 +47,12 @@ public class WcTest{
 	}
 
 	@Test
+	public void getNumberOfWords_gives_6_when_6_words_are_in_string_string_having_new_line(){
+		String string=" I am rukna\nYou are you";
+		assertEquals(6, WcLib.getNumberOfWords(string));
+	}
+
+	@Test
 	public void numberOfSpaces_gives_2_when_2_spaces_are_in_string(){
 		String string="I am rukna";
 		assertEquals(2, WcLib.numberOfSpaces(string));
