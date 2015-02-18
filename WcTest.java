@@ -156,6 +156,6 @@ public class WcTest{
 		String string=" I 						am				 rukna";
 		WcLib wcText=new WcLib(string);
 		assertEquals(3, wcText.countWords());
-		System.out.println("==========>please type <java Wc {yourString in double quotes}> to see the result");
+		System.out.println("==========>please type <java WC {yourString in double quotes}> to see the result");
 	}
 }
