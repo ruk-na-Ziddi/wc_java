@@ -13,4 +13,8 @@ public class WcLib{
 		return trimmed.split("\\W+").length;
 	}
 
+	public static int getNumberOfLines(String string){
+		return string.split("\r\n|\r|\n").length;
+	}
+
 }

@@ -76,4 +76,10 @@ public class WcTest{
 		assertEquals(0, WcLib.numberOfSpaces(string));
 	}
 
+	@Test
+	public void getNumberOfLines_gives_1_when_one_lines_is_in_string(){
+		String string="I am rukna";
+		assertEquals(1, WcLib.getNumberOfLines(string));
+	}
+
 }
