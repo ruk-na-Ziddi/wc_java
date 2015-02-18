@@ -1,24 +1,29 @@
 public class WcLib{
+
 	private String text=null;
 
 	public WcLib(String text){
 		this.text=text;
 	}
 
-	public  int countCharacters(){
+	public String getText(){
+		return text;
+	}
+
+	public int countCharacters(){
 		return text.length();
 	}
 
-	public  int countWords(){
+	public int countWords(){
 		String trimmed=text.trim();
 		return trimmed.split("\\W+").length;
 	}
 
-	public  int countLines(){
+	public int countLines(){
 		return text.split("\r\n|\r|\n").length;
 	}
 
-	public  String wcOutput(){
+	public String wcOutput(){
 		return countCharacters()+" "+countWords()+" "+countLines();
 	}
 

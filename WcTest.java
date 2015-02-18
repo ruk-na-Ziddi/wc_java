@@ -10,7 +10,6 @@ public class WcTest{
 		assertEquals(10, wcText.countCharacters());
 	}
 
-
 	@Test
 	public void countCharacters_gives_24_when_string_lenght_is_24(){
 		String string="I am swamiji STEP father";
@@ -23,6 +22,13 @@ public class WcTest{
 		String string="Jayanth is STEP mother and Swamiji STEP father";
 		WcLib wcText=new WcLib(string);
 		assertEquals(46, wcText.countCharacters());
+	}
+
+	@Test
+	public void getText_gives_given_string_as_it_is_without_new_line(){
+		String string="I am rukna";
+		WcLib wcText=new WcLib(string);
+		assertTrue(wcText.getText().equals(string));
 	}
 
 	@Test
