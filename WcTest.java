@@ -106,4 +106,10 @@ public class WcTest{
 		assertEquals(3, WcLib.getNumberOfLines(string));
 	}
 
+	@Test
+	public void getNumberOfLines_gives_2_when_2_lines_are_in_string_with_s_r_s_n(){
+		String string="I am rukna\r\nbut my name is Ankur";
+		assertEquals(2, WcLib.getNumberOfLines(string));
+	}
+
 }
