@@ -118,4 +118,10 @@ public class WcTest{
 		String string=" I am rukna\r\nYou are you";
 		assertEquals(6, WcLib.countWords(string));
 	}
+
+	@Test
+	public void countWords_gives_3_when_3_words_are_in_string_string_having_tabs(){
+		String string=" I 						am				 rukna";
+		assertEquals(3, WcLib.countWords(string));
+	}
 }
