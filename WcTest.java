@@ -118,4 +118,10 @@ public class WcTest{
 		assertEquals(3, WcLib.getNumberOfLines(string));
 	}
 
+	@Test
+	public void getNumberOfLines_gives_4_when_4_lines_are_in_string_with_s_r_s_n(){
+		String string="I am rukna\r\nbut my name is Ankur\r\nhasi aa rahi hai\r\nmain aisa q hoon mujhe bhi ni pata";
+		assertEquals(4, WcLib.getNumberOfLines(string));
+	}
+
 }
