@@ -102,8 +102,14 @@ public class WcTest{
 
 	@Test
 	public void wcOutput_gives_out_as_wc_for_a_string_charCount_wordCount_and_lineCount(){
-		String string="I am rukna\r\nbut my name is Ankur\r\nConfuse ho gaye na!";
-		String expected="53 12 3";
+		String string="I am rukna\nbut my name is Ankur\nConfuse ho gaye na!";
+		String expected="51 12 3";
 		assertTrue(WcLib.wcOutput(string).equals(expected));
+	}
+
+	@Test
+	public void countWords_gives_6_when_6_words_are_in_string_string_having_new_line_with_s_r(){
+		String string=" I am rukna\rYou are you";
+		assertEquals(6, WcLib.countWords(string));
 	}
 }
