@@ -13,4 +13,8 @@ public class WcLib{
 		return string.split("\r\n|\r|\n").length;
 	}
 
+	public static String wcOutput(String string){
+		return countCharacters(string)+" "+countWords(string)+" "+countLines(string);
+	}
+
 }

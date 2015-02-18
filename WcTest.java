@@ -99,4 +99,11 @@ public class WcTest{
 		String string="I am rukna\r\nbut my name is Ankur\r\nhasi aa rahi hai\r\nmain aisa q hoon mujhe bhi ni pata";
 		assertEquals(4, WcLib.countLines(string));
 	}
+
+	@Test
+	public void wcOutput_gives_out_as_wc_for_a_string_charCount_wordCount_and_lineCount(){
+		String string="I am rukna\r\nbut my name is Ankur\r\nConfuse ho gaye na!";
+		String expected="53 12 3";
+		assertTrue(WcLib.wcOutput(string).equals(expected));
+	}
 }
