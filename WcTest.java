@@ -88,4 +88,10 @@ public class WcTest{
 		assertEquals(2, WcLib.getNumberOfLines(string));
 	}
 
+	@Test
+	public void getNumberOfLines_gives_3_when_3_lines_are_in_string(){
+		String string="I am rukna\nbut my name is Ankur\nConfuse ho gaye na!";
+		assertEquals(3, WcLib.getNumberOfLines(string));
+	}
+
 }
