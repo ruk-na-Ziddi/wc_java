@@ -4,10 +4,6 @@ public class WcLib{
 		return string.length();
 	}
 
-	public static int numberOfSpaces(String string){
-		return string.length()-string.replace(" ","").length();
-	}
-
 	public static int countWords(String string){
 		String trimmed=string.trim();
 		return trimmed.split("\\W+").length;

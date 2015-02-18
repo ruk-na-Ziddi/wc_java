@@ -53,30 +53,6 @@ public class WcTest{
 	}
 
 	@Test
-	public void numberOfSpaces_gives_2_when_2_spaces_are_in_string(){
-		String string="I am rukna";
-		assertEquals(2, WcLib.numberOfSpaces(string));
-	}
-
-	@Test
-	public void numberOfSpaces_gives_5_when_5_spaces_are_in_string(){
-		String string="I   am  rukna";
-		assertEquals(5, WcLib.numberOfSpaces(string));
-	}
-
-	@Test
-	public void numberOfSpaces_gives_7_when_7_spaces_are_in_string(){
-		String string=" I   am  rukna ";
-		assertEquals(7, WcLib.numberOfSpaces(string));
-	}
-
-	@Test
-	public void numberOfSpaces_gives_0_when_no_spaces_are_in_string(){
-		String string="Iamrukna";
-		assertEquals(0, WcLib.numberOfSpaces(string));
-	}
-
-	@Test
 	public void countLines_gives_1_when_one_lines_is_in_string(){
 		String string="I am rukna";
 		assertEquals(1, WcLib.countLines(string));
