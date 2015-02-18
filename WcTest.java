@@ -32,6 +32,13 @@ public class WcTest{
 	}
 
 	@Test
+	public void getText_gives_given_string_as_it_is_with_new_line(){
+		String string="Jayanth is STEP mother\r\nbut Swamiji is STEP father";
+		WcLib wcText=new WcLib(string);
+		assertTrue(wcText.getText().equals(string));
+	}
+
+	@Test
 	public void countWords_gives_3_when_3_words_are_in_string(){
 		String string="I am rukna";
 		WcLib wcText=new WcLib(string);
