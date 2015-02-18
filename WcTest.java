@@ -112,4 +112,10 @@ public class WcTest{
 		String string=" I am rukna\rYou are you";
 		assertEquals(6, WcLib.countWords(string));
 	}
+
+	@Test
+	public void countWords_gives_6_when_6_words_are_in_string_string_having_new_line_with_s_r_s_n(){
+		String string=" I am rukna\r\nYou are you";
+		assertEquals(6, WcLib.countWords(string));
+	}
 }
