@@ -180,4 +180,12 @@ public class WcTest{
 		assertTrue(wcText.getGreatestLine().equals(expected));
 	}
 
+	@Test
+	public void getGreatestLine_gives_gretest_line_from_the_text_new_line_is_separated_with_s_r(){
+		String string="Main aisa q hoon\rMain aisa hi hoon\rMain jaisa bhi hoon accha hoon";
+		WcLib wcText=new WcLib(string);
+		String expected="30 Main jaisa bhi hoon accha hoon";
+		assertTrue(wcText.getGreatestLine().equals(expected));
+	}
+
 }
