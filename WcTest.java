@@ -165,4 +165,11 @@ public class WcTest{
 		assertTrue(WcLib.greaterLength(str1,str2).equals(str2));
 	}
 
+	@Test
+	public void greaterLength_takes_two_strings_and_returns_first_string_as_greater_length_string(){
+		String str1="Main aisa hi hoon";
+		String str2="My name is Khan";
+		assertTrue(WcLib.greaterLength(str1,str2).equals(str1));
+	}
+
 }
