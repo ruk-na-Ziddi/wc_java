@@ -30,4 +30,13 @@ public class WcLib{
 		return (str1.length() > str2.length())? str1 : str2;
 	}
 
+	public String getGreatestLine(){
+		String[] textArray=text.split("\r\n|\r|\n");
+		String initial_string="";
+		for (int i=0;i<textArray.length;++i){
+			initial_string=greaterLength(initial_string,textArray[i]);
+		}
+		return initial_string.length()+" "+initial_string;
+	}
+
 }
