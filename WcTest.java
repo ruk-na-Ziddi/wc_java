@@ -156,6 +156,13 @@ public class WcTest{
 		String string=" I 						am				 rukna";
 		WcLib wcText=new WcLib(string);
 		assertEquals(3, wcText.countWords());
-		System.out.println("==========>please type <java WC {yourString in double quotes}> to see the result");
 	}
+
+	@Test
+	public void greaterLength_takes_two_strinags_and_returns_second_string_as_greater_length_string(){
+		String str1="My name is Khan";
+		String str2="Main aisa hi hoon";
+		assertTrue(WcLib.greaterLength(str1,str2).equals(str2));
+	}
+
 }

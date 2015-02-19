@@ -26,4 +26,8 @@ public class WcLib{
 		return countCharacters()+" "+countWords()+" "+countLines();
 	}
 
+	public static String greaterLength(String str1,String str2){
+		return (str1.length() > str2.length())? str1 : str2;
+	}
+
 }
