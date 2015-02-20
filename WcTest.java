@@ -210,4 +210,12 @@ public class WcTest{
 		assertTrue(WcLib.smallerLength(str1,str2).equals(str2));
 	}
 
+	@Test
+	public void getSmallestLine_gives_gretest_line_from_the_text(){
+		String string="Main aisa q hoon\nMain aisa hi hoon\nMain jaisa bhi hoon accha hoon";
+		WcLib wcText=new WcLib(string);
+		String expected="16 Main aisa q hoon";
+		assertTrue(wcText.getSmallestLine().equals(expected));
+	}
+
 }
