@@ -203,4 +203,11 @@ public class WcTest{
 		assertTrue(WcLib.smallerLength(str1,str2).equals(str1));
 	}
 
+	@Test
+	public void smallerLength_takes_two_strinags_and_returns_second_string_as_greater_length_string(){
+		String str1="Main aisa hi hoon";
+		String str2="My name is Khan";
+		assertTrue(WcLib.smallerLength(str1,str2).equals(str2));
+	}
+
 }
