@@ -274,4 +274,9 @@ public class WcTest{
 		assertEquals(true,WcLib.isFileName("WcTest.txt"));
 	}
 
+	@Test
+	public void isFileName_gives_true_for_minus_c(){
+		assertEquals(false,WcLib.isFileName("-c"));
+	}
+
 }
