@@ -51,6 +51,9 @@ public class WcLib{
 		}
 		return initial_string.length()+" "+initial_string;
 	}
-	
+
+	public static boolean isOption(String string){
+		return string.charAt(0)=='-';
+	}
 
 }

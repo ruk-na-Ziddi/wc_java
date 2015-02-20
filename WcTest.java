@@ -234,4 +234,9 @@ public class WcTest{
 		assertTrue(wcText.getSmallestLine().equals(expected));
 	}
 
+	@Test
+	public void isOption_gives_true_for_minus_a(){
+		assertEquals(true,WcLib.isOption("-a"));
+	}
+
 }
