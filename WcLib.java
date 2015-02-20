@@ -39,4 +39,8 @@ public class WcLib{
 		return initial_string.length()+" "+initial_string;
 	}
 
+	public static String smallerLength(String str1,String str2){
+		return (str1.length() < str2.length())? str1 : str2;
+	}
+	
 }

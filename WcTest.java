@@ -189,11 +189,18 @@ public class WcTest{
 	}
 
 	@Test
-	public void getGreatestLine_gives_gretest_line_from_the_text_new_line_is_separated_with_s_r(){
+	public void getGreatestLine_gives_gretest_line_from_the_text_new_line_is_separated_with_s_r_s_n(){
 		String string="Main aisa q hoon\r\nMain aisa hi hoon\r\nMain jaisa bhi hoon accha hoon";
 		WcLib wcText=new WcLib(string);
 		String expected="30 Main jaisa bhi hoon accha hoon";
 		assertTrue(wcText.getGreatestLine().equals(expected));
+	}
+
+	@Test
+	public void smallerLength_takes_two_strinags_and_returns_first_string_as_greater_length_string(){
+		String str1="My name is Khan";
+		String str2="Main aisa hi hoon";
+		assertTrue(WcLib.smallerLength(str1,str2).equals(str1));
 	}
 
 }
