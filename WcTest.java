@@ -244,4 +244,9 @@ public class WcTest{
 		assertEquals(true,WcLib.isOption("-c"));
 	}
 
+	@Test
+	public void isOption_gives_true_for_minus_L(){
+		assertEquals(true,WcLib.isOption("-L"));
+	}
+
 }
