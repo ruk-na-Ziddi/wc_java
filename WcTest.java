@@ -269,4 +269,9 @@ public class WcTest{
 		assertEquals(false,WcLib.isOption("WcTest.txt"));
 	}
 
+	@Test
+	public void isFileName_gives_true_for_WcTest_dot_txt(){
+		assertEquals(true,WcLib.isFileName("WcTest.txt"));
+	}
+
 }

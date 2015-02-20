@@ -56,4 +56,8 @@ public class WcLib{
 		return string.charAt(0)=='-';
 	}
 
+	public static boolean isFileName(String string){
+		return !isOption(string);
+	}
+
 }
