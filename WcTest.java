@@ -254,4 +254,14 @@ public class WcTest{
 		assertEquals(true,WcLib.isOption("--words"));
 	}
 
+	@Test
+	public void isOption_gives_false_for_bytes(){
+		assertEquals(false,WcLib.isOption("bytes"));
+	}
+
+	@Test
+	public void isOption_gives_false_for_one_dot_txt(){
+		assertEquals(false,WcLib.isOption("one.txt"));
+	}
+
 }
