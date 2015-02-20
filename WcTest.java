@@ -218,4 +218,12 @@ public class WcTest{
 		assertTrue(wcText.getSmallestLine().equals(expected));
 	}
 
+	@Test
+	public void getSmallestLine_gives_gretest_line_from_the_text_new_line_char_is_s_r(){
+		String string="Main aisa q hoon\rMain aisa hi hoon\rMain jaisa bhi hoon accha hoon";
+		WcLib wcText=new WcLib(string);
+		String expected="16 Main aisa q hoon";
+		assertTrue(wcText.getSmallestLine().equals(expected));
+	}
+
 }
